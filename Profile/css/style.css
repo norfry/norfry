@@ -1,0 +1,102 @@
+body {
+	background-color: lemonchiffon;
+	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Homemade Apple', cursive;
+	background-image: url(../images/bakgrunn.jpg);
+}
+
+.main { 
+	background-color: rgba(255, 255, 255, 0.8);
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 20px 0px 50px 10px lemonchiffon
+
+
+}
+
+/* this is a CSS comment */ 
+/* de greiene under er: den øverste for gamle browsere, som ikke kan gjøre ting gjennomsiktige. de leser bare
+den første linjen. nyere browsere leser linje nummer to også, og klarer å gjøre bakgrunnfargen opaque */
+
+p{
+	background-color: #ffffff;
+	background-color:rgba(255,255,255, 0);
+	text-decoration-color: orange;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 10px 10px 50px orange
+	font-family: 'Homemade Apple', cursive;}
+
+h2 {
+	text-align:center;
+	margin-top: 0;
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h3:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+h3 {
+		margin-bottom: 0;
+}
+/* greia over er for at når h3 klapper sammen tingene under, så er det ikke et lite "hopp" når 
+skriften er borte og bare margene er igjen*/
+
+
+img {
+	width: 400px;
+	border-radius: 200px;
+	margin-left: auto;
+	margin-right:auto;
+	display: block;
+	cursor: pointer;
+}
+
+.halla{
+	/*her kan du putte ting om det specifike bildet */
+}
+
+/*de tre linjene over gjør at bildet er i midten av siden uansett størrelse. border radius gjør at hjørnene er 
+avrundet. Kan også skrives som %. Under, så targeter du både ul og ol siden du har komma mellom. */
+
+
+ul,
+ol {
+	list-style: none;
+	padding-left: 0;
+	line-hieght: 1.5;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/* det under gjør at når man åpner siden, så er alle tingene under en h3 "gjemt", slik at man må
+klikke på linkene så de funker. make an element on the page js.  */ 
+
+.js h3 + * {
+	display: none;
+}   
+
+
+
+
+a{
+	color: teal;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: pink;
+	font-family: 'Quicksand', sans-serif;
+}
